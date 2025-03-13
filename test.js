@@ -1,5 +1,5 @@
-
-/*const numbers = Array.from({ length: 10000 }, (_, i) => i);
+/*
+const numbers = Array.from({ length: 10000 }, (_, i) => i);
 const squaredNumbers = numbers.map(num => {
     return num * num; 
 });
@@ -14,11 +14,6 @@ for (let i = 0; i < 1000; i++) {
 }
 
 
-const fs = require("fs");
-const data = fs.readFileSync("largefile.txt", "utf-8"); 
-console.log("File read completed");
-
-// Unoptimized Recursion
 function fibonacci(n) {
     if (n <= 1) return n;
     return fibonacci(n - 1) + fibonacci(n - 2); 
@@ -35,9 +30,31 @@ for (let i = 0; i < 10000; i++) {
 }
 console.log("String built");
 
+
+const users = Array.from({ length: 5000 }, (_, i) => ({ id: i, name: `User${i}` }));
+const userNames = users.map(user => user.name); 
+console.log("Processed user names");
+
+
+const evenNumbers = numbers.filter(num => num % 2 === 0); 
+console.log("Filtered even numbers");
+
+// Bad Event Loop Handling
+setTimeout(() => {
+    for (let i = 0; i < 1e6; i++) {
+        console.log("Blocking operation", i);
+    }
+}, 1000);
+
+
+function heavyComputation() {
+    let sum = 0;
+    for (let i = 0; i < 1e7; i++) {
+        sum += Math.sqrt(i); 
+    }
+    return sum;
+}
+console.log("Heavy computation result:", heavyComputation());
+
 */
-
-
-
-
 
