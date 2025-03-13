@@ -1,5 +1,5 @@
 
-const numbers = Array.from({ length: 10000 }, (_, i) => i);
+/*const numbers = Array.from({ length: 10000 }, (_, i) => i);
 const squaredNumbers = numbers.map(num => {
     return num * num; 
 });
@@ -34,3 +34,10 @@ for (let i = 0; i < 10000; i++) {
     str += "a"; 
 }
 console.log("String built");
+
+*/
+
+
+
+
+
