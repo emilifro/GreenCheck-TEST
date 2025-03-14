@@ -1,4 +1,4 @@
-/*
+
 const numbers = Array.from({ length: 10000 }, (_, i) => i);
 const squaredNumbers = numbers.map(num => {
     return num * num; 
@@ -56,5 +56,5 @@ function heavyComputation() {
 }
 console.log("Heavy computation result:", heavyComputation());
 
-*/
+
 
