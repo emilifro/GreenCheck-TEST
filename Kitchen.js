@@ -1,4 +1,4 @@
-/*
+
 // kitchen.js - Kitchen module for bakery shop with realistic intensive computations
 let inventory = {
   "Chocolate Cake": 0,
@@ -148,4 +148,3 @@ module.exports = {
   bakeCake,
   listInventory,
 };
-*/
